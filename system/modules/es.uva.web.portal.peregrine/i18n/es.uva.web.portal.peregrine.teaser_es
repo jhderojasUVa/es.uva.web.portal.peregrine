@@ -1,0 +1,11 @@
+label.PRTeaser.Title=Título del video (cambiar)
+label.PRTeaserItem.Color=Color del elemento
+label.PRTeaserItem.Headline=Títutlo del elemento
+label.PRTeaserItem.Icon=Icono del elemento
+label.PRTeaserItem.Link=Enlace del elemento
+label.PRTeaserItem.Number=Número para la cifra
+label.PRTeaserItem.Text=Texto
+label.PRTeaserItem.Unit=Unidad de la cifra
+teaser.default.Text=Texto por defecto (cambiar)
+teaser.default.Title=Título del grupo de elementos (cambiar)
+setting.hidetitle=Ocultar título

@@ -1,0 +1,5 @@
+video.default.Title=Título del grupo de vídeos (cambiar)
+label.PRVideo.Title=Título del video (cambiar)
+label.PRVideo.Video=URL del video (cambiar)
+label.PRVideo.Foot=Pie del video (cambiar)
+setting.hidetitle=Ocultar título

@@ -1,0 +1,49 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+
+	<xsd:element name="Videos" type="OpenCmsVideos"/>
+
+	<xsd:complexType name="OpenCmsVideos">
+		<xsd:sequence>
+			<xsd:element name="Video" type="OpenCmsVideo" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsVideo">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Video" type="OpenCmsString" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Foot" type="OpenCmsString" minOccurs="0" maxOccurs="1"/>
+			<!-- <xsd:element name="Formato" type="OpenCmsString" minOccurs="0" maxOccurs="1"/> -->
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="es.uva.web.portal.peregrine.workplace"/>
+			<mappings>
+			</mappings>
+			<defaults>
+			</defaults>
+			<layouts>
+				<!-- layouts -->
+				<!--<layout element="Formato" widget="SelectorWidget" configuration="0:Seleccione un formato*|1:4_3|2:16_9" />-->
+			</layouts>
+			<validationrules>
+				<!-- Reglas de validacion -->
+				<!-- Obligatorio -->
+				<!--<rule element="Title" regex="!^$" message="Es necesario el titulo del video" /> -->
+				<rule element="Video" regex="^(https?)(://)(www\.)?[(youtube\.com/watch\?v=)|(vimeo\.com)](.*)" message="El formato de la URL del video no es correcta" />
+				<!--
+				<rule element="Video" regex="^[http(s)]+(://)+[(www\.youtube\.com/watch\?v=)|(www\.vimeo\.com/)|(vimeo\.com/)](.*)" message="El formato de la URL del video no es correcto" />
+				-->
+				<!-- Opcional -->
+			</validationrules>
+			<relations/>
+			<searchsettings containerPageOnly="true"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+</xsd:schema>

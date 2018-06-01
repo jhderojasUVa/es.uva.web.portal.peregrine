@@ -1,0 +1,16 @@
+Title.default=Título de la imagen (cambiar)
+imagen.default.Title=Título de la imagen (cambiar)
+imagen.default.Text=Texto de la imagen (cambiar)
+label.PRImagen.Title=Título del grupo de imágenes
+label.PRImagen.Title.help=Título de la imagen que se puede ocultar
+label.PRImagen.Item=Elemento de imagen (puedes tener varios)
+label.PRImagen.Title.help=Cada elemento es una imagen
+label.PRImageItem.Headline=Título del elemento de imagen
+label.PRImageItem.Headline.help=Es importante poner un título en la imagen para el SEO y los programas de adaptación a personas con probemas visuales
+label.PRImageItem.Text=Texto que acompaña a la imagen
+label.PRImageItem.Text.help=Es importante poner un texto en la imagen para el SEO y los programas de adaptación a personas con probemas visuales
+label.PRImageItem.Image=Imagen obtenida de la galería de imágenes
+label.PRImageItem.Image.help=Debe subir antes la imagen a la galería para después seleccionarla
+label.PRImageItem.Link=Enlace de la imagen (opcional)
+label.PRImageItem.Link.help=Si desea que la imagen enlace con algún otro sitio debe indicarlo aquí. Si es un enlace interno recuerde quitar el export.
+setting.hidetitle=Ocultar título

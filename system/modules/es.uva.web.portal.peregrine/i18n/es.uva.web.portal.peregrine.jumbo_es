@@ -1,0 +1,6 @@
+label.PRJumbo.Image=Imagen del Jumbo (opcional)
+label.PRJumbo.Link=Enlace del Jumbo (opcional)
+label.PRJumbo.Text=Texto del Jumbo
+label.PRJumbo.Title=Título del Jumbo
+setting.hidetitle=Ocultar título
+titulo.default.Title=Título de la cabecera

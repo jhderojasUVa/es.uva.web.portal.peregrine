@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Jumbo o Destacado con o sin imagen]]></NiceName>
+    <Type><![CDATA[pr-jumbo]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/es.uva.web.portal.peregrine/formatters/pr-jumbo-formatter.jsp]]></target>
+        <uuid>310ae8b9-326e-11e8-a3c6-0050568213af</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1001]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[contenedor]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[color_fondo]]></PropertyName>
+      <DisplayName><![CDATA[Color de fondo]]></DisplayName>
+      <Description><![CDATA[Color de fondo del elemento]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[azul]]></Default>
+      <WidgetConfig><![CDATA[azul:azul|verde:verde|naranja:naranja|morado:morado|blanco:blanco]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[color_letras]]></PropertyName>
+      <DisplayName><![CDATA[Color de las letras]]></DisplayName>
+      <Description><![CDATA[Color de las letras del elemento]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[blanco]]></Default>
+      <WidgetConfig><![CDATA[azul:azul|verde:verde|naranja:naranja|blanco:blanco]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

@@ -1,0 +1,127 @@
+// Admision v.01
+
+@import '_fonts';
+@import 'outline';
+@import '_colors';
+@import '_jumbo';
+@import '_jumbotron';
+@import 'tabs_horizontal';
+@import '_alert';
+
+@import 'media-query';
+
+$blanco: white;
+$negro: black;
+$naranja: #ff8a66;
+$verde: #25ad87;
+$azul: #4da7e3;
+$azul_oscuro: #005d8c;
+$morado: #c0b2d5;
+$naranja2: #eb684c;
+$amarillo: #f0c84e;
+
+body {
+  background-image: linear-gradient(-45deg, #f1f1f1 1px, #f8f8f8 2px, #f8f8f8 10px);
+  background-size: 10px 10px;
+}
+
+/* Estilos de la cabecera */
+.cabecera {
+  background: url('../img/Admision_cabecera.jpg') no-repeat;
+  background-size: contain;
+}
+
+/* Estilos del menu */
+.navegacion {
+  position: absolute;
+  right: 0;
+  background-color: $blanco;
+  border: 1px solid lighten($negro, 60);
+  padding: 1em;
+  z-index: 100;
+  a {
+    color: $negro;
+  }
+  .nav {
+    display: inline;
+    li a {
+      color: lighten($negro, 60);
+    }
+  }
+}
+
+.titulo {
+  font-size: 6.8em;
+  &.notanto {
+    font-size: 6.8em;
+  }
+}
+
+/* Titulo adaptative */
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+  .titulo {
+    font-size: 5.7em;
+    &.notanto {
+      font-size: 2.3em;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .titulo {
+    font-size: 4em;
+    &.notanto {
+      font-size: 2em;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .titulo {
+    font-size: 10em;
+    &.notanto {
+      font-size: 3em;
+    }
+  }
+}
+
+.titulo_gordo {
+  position: relative;
+  .numero_paso {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    font-size: 2em;
+  }
+}
+
+.footer {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/*
+@include outline('verde', $verde);
+@include outline('azul', $azul);
+@include outline('morado', $morado);
+@include outline('naranja2', $naranja);
+@include outline('negro', $negro);
+*/
+@include create_border('verde', $verde, 1);
+@include create_border('azul', $azul, 1);
+@include create_border('azul_oscuro', $azul_oscuro, 1);
+@include create_border('morado', $morado, 1);
+@include create_border('naranja2', $naranja2, 1);
+@include create_margins(0, 0);
+@include crea_color('naranja', $naranja);
+@include create_text_color('amarillo', $amarillo);
+@include create_text_color('blanco', $blanco);
+@include create_text_color('negro', $negro);
+@include create_shadow_box(3, $negro);
+@include create_background('verde', $verde);
+@include create_background('naranja', $naranja);
+@include create_background('blanco', $blanco);
+@include create_background('amarillo', $amarillo);
+@include create_background('morado', $morado);
+@include create_background('azul', $azul);
+@include create_jumbotron('blanco', 'azul', $blanco, $azul, true);
+@include create_jumbotron('blanco', 'azul', $blanco, $azul, false);
+@include create_tab_horizontal('left');

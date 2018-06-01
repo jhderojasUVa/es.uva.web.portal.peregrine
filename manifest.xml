@@ -1,0 +1,2548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<creator>e09338789f</creator>
+		<opencms_version>10.5.3</opencms_version>
+		<createdate>Mon, 30 Apr 2018 07:04:05 GMT</createdate>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>es.uva.web.portal.peregrine</name>
+		<nicename/>
+		<class/>
+		<export-mode name="default"/>
+		<description><![CDATA[Módulo para admisión]]></description>
+		<version>0.1</version>
+		<authorname><![CDATA[Soporte Web de la Universidad de Valladolid]]></authorname>
+		<authoremail><![CDATA[soporte-web@uva.es]]></authoremail>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints>
+			<exportpoint uri="/system/modules/es.uva.web.portal.peregrine/classes/" destination="WEB-INF/classes/"/>
+		</exportpoints>
+		<resources>
+			<resource uri="/system/modules/es.uva.web.portal.peregrine/"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-parrafo.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-parrafo_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-imagen.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-imagen_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-flexible.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-flexible_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-video.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-video_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-teaser.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-teaser_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-jumbo.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-jumbo_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-title.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-title_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-tabs.png"/>
+			<resource uri="/system/workplace/resources/filetypes/pr-tabs_big.png"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-parrafo" id="1300">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-parrafo.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-imagen" id="1301">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-imagen.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-flexible" id="1302">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-flexible.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-video" id="1303">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-video.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-teaser" id="1304">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-teaser.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-jumbo" id="1305">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-jumbo.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-title" id="1306">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-title.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="pr-tabs" id="1307">
+				<param name="schema">/system/modules/es.uva.web.portal.peregrine/schemas/pr-tabs.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="pr-parrafo" key="fileicon.pr-parrafo" icon="pr-parrafo.png" bigicon="pr-parrafo_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-parrafo" order="10" autosetnavigation="false" autosettitle="false" info="desc.pr-parrafo" key="title.pr-parrafo"/>
+			</explorertype>
+			<explorertype name="pr-imagen" key="fileicon.pr-imagen" icon="pr-imagen.png" bigicon="pr-imagen_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-imagen" order="10" autosetnavigation="false" autosettitle="false" key="title.pr-imagen"/>
+			</explorertype>
+			<explorertype name="pr-flexible" key="fileicon.pr-flexible" icon="pr-flexible.png" bigicon="pr-flexible_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-flexible" order="10" autosetnavigation="false" autosettitle="false" info="desc.pr-flexible" key="title.pr-flexible"/>
+			</explorertype>
+			<explorertype name="pr-video" key="fileicon.pr-video" icon="pr-video.png" bigicon="pr-video_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-video" order="10" autosetnavigation="false" autosettitle="false" info="desc.pr-video" key="title.pr-video"/>
+			</explorertype>
+			<explorertype name="pr-teaser" key="fileicon.pr-teaser" icon="pr-teaser.png" bigicon="pr-teaser_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-teaser" order="10" autosetnavigation="false" autosettitle="false" info="desc.pr-teaser" key="title.pr-teaser"/>
+			</explorertype>
+			<explorertype name="pr-jumbo" key="fileicon.pr-jumbo" icon="pr-jumbo.png" bigicon="pr-jumbo_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-jumbo" order="10" autosetnavigation="false" autosettitle="false" info="desc.pr-jumbo" key="title.pr-jumbo"/>
+			</explorertype>
+			<explorertype name="pr-title" key="fileicon.pr-title" icon="pr-title.png" bigicon="pr-title_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-title" order="10" autosetnavigation="false" autosettitle="false" info="desc.pr-title" key="title.pr-title"/>
+			</explorertype>
+			<explorertype name="pr-tabs" key="fileicon.pr-tabs" icon="pr-tabs.png" bigicon="pr-tabs_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=pr-tabs" order="10" autosetnavigation="false" autosettitle="false" info="desc.pr-tabs" key="title.pr-tabs"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<uuidstructure>1de80c57-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:55:39 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:39 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>1</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<uuidstructure>1f9630c3-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:55:42 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:42 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine</destination>
+			<type>folder</type>
+			<uuidstructure>8d3b88cf-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/.config</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>e56bd442-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>e56bd443-2058-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 08:01:58 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:01 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/classes</destination>
+			<type>folder</type>
+			<uuidstructure>8d4cc6eb-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/classes/es</destination>
+			<type>folder</type>
+			<uuidstructure>8d4ee9cd-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/classes/es/uva</destination>
+			<type>folder</type>
+			<uuidstructure>8d50977f-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/classes/es/uva/web</destination>
+			<type>folder</type>
+			<uuidstructure>8d521e21-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/classes/es/uva/web/portal</destination>
+			<type>folder</type>
+			<uuidstructure>8d5419f3-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/classes/es/uva/web/portal/peregrine</destination>
+			<type>folder</type>
+			<uuidstructure>8d5615c5-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/elements</destination>
+			<type>folder</type>
+			<uuidstructure>8d44d7a3-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/elements/menu</destination>
+			<type>folder</type>
+			<uuidstructure>81e2682c-206e-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 12:12:43 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 12:12:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/elements/menu/nav.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/elements/menu/nav.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>2e55a5eb-49ea-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>2e55a5ec-49ea-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 07:14:18 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 07:11:18 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/elements/menu/nav_breadcrumb.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/elements/menu/nav_breadcrumb.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>8afdcc1e-206e-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>8afdcc1f-206e-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 07 Mar 2018 09:46:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 12:12:58 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/elements/menu/nav_main.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/elements/menu/nav_main.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>20d84108-21e9-11e8-b7db-0050568213af</uuidstructure>
+			<uuidresource>20d84109-21e9-11e8-b7db-0050568213af</uuidresource>
+			<datelastmodified>Wed, 07 Mar 2018 09:37:09 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 07 Mar 2018 09:22:59 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/elementviews</destination>
+			<type>folder</type>
+			<uuidstructure>7b4030fd-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:49:22 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:49:22 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/elementviews/peregrine_elementview</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/elementviews/peregrine_elementview</destination>
+			<type>elementview</type>
+			<uuidstructure>895ed88f-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>895ed890-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 08:01:08 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:49:45 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Admisión2]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters</destination>
+			<type>folder</type>
+			<uuidstructure>8d46d375-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-flexible-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-flexible-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>14802db5-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>14802db6-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 28 Mar 2018 08:23:10 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:29 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for PR-Flexible]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-flexible-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-flexible-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>147dbcb2-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>147dbcb3-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:34:13 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:29 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-imagen-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-imagen-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>05c6f3b9-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>05c6f3ba-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 28 Mar 2018 08:23:17 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:05 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for PR-Imagen]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-imagen-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-imagen-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>05c43496-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>05c43497-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:28:10 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:05 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-jumbo-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-jumbo-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>3126fc3c-326e-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>3126fc3d-326e-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:38:33 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Wed, 28 Mar 2018 09:55:48 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Elemento Jumbo SIN IMAGEN]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Jumbo o Destacado con o sin imagen]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-jumbo-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-jumbo-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>310ae8b9-326e-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>310ae8ba-326e-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 30 Apr 2018 06:48:20 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Wed, 28 Mar 2018 09:55:48 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>e5573acc-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>e5573acd-2058-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 28 Mar 2018 08:23:24 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:01 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Párrafo sin imagen]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>e5534329-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>e553432a-2058-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:31:53 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:01 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgder-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgder-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>575ec1d8-206a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>575ec1d9-206a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 28 Mar 2018 08:23:30 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:42:53 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Párrafo con imágenes a la derecha]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgder-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgder-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>675a18b1-206a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>675a18b2-206a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 10:04:27 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:43:20 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgizq-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgizq-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>4a9ee6f2-206a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>4a9ee6f3-206a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 28 Mar 2018 08:23:40 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:42:32 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Párrafo con imágenes a la izquierda]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgizq-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-parrafo-imgizq-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>5ec6825e-206a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>5ec6825f-206a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 10:04:36 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:43:06 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-tabs-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-tabs-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>917826d6-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>917826d7-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:32:03 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:53:20 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for PR-Tabs]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-tabs-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-tabs-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>9162ca13-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>9162ca14-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:31:23 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:53:20 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-teaser-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-teaser-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>49de489d-2065-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>49de489e-2065-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 28 Mar 2018 08:23:46 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:06:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for PRTeaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-teaser-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-teaser-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>49d8552a-2065-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>49d8552b-2065-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:40:11 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:06:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-title-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-title-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>59c19bc0-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>59c19bc1-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 08:40:25 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:51:47 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for PR-Title]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-title-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-title-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>59a9a6ed-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>59a9a6ee-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 08:39:23 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:51:46 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-video-formatter-config.xml</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-video-formatter-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>20670cd1-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>20670cd2-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Wed, 28 Mar 2018 08:23:52 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:49 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample formatter for PR-Video]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/formatters/pr-video-formatter.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/formatters/pr-video-formatter.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>2063644e-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>2063644f-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:53:45 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:49 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n</destination>
+			<type>folder</type>
+			<uuidstructure>e54b7af4-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:38:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:01 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.flexible_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.flexible_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>dfe5928b-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>dfe5928c-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:41:25 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:52:11 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.imagen_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.imagen_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>ca1db4a8-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>ca1db4a9-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:41:31 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:51:34 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.jumbo_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.jumbo_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>7faad433-3e44-11e8-8388-0050568213af</uuidstructure>
+			<uuidresource>7faad434-3e44-11e8-8388-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 11:29:56 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 11:27:35 GMT</datecreated>
+			<usercreated>e71124293j</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.parrafo_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.parrafo_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>a25c3ef5-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>a25c3ef6-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:41:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:50:27 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.tabs_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.tabs_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>4a5a25a4-3e44-11e8-8388-0050568213af</uuidstructure>
+			<uuidresource>4a5a25a5-3e44-11e8-8388-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 11:27:03 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 11:26:06 GMT</datecreated>
+			<usercreated>e71124293j</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.teaser_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.teaser_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>a4a71930-2065-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>a4a71931-2065-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:41:41 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:09:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.titulo_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.titulo_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>c019b0bd-3e43-11e8-8388-0050568213af</uuidstructure>
+			<uuidresource>c019b0be-3e43-11e8-8388-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 11:23:59 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 11:22:14 GMT</datecreated>
+			<usercreated>e71124293j</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.video_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.video_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>1d770ddf-2064-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>1d770de0-2064-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 05 Mar 2018 11:41:46 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 10:58:19 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.workplace_es</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/i18n/es.uva.web.portal.peregrine.workplace_es</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>e54d4fb6-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>e54d4fb7-2058-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 11:33:31 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:01 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources</destination>
+			<type>folder</type>
+			<uuidstructure>8d4acb19-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision</destination>
+			<type>folder</type>
+			<uuidstructure>2d74ded4-2690-11e8-9c75-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 13 Mar 2018 07:28:51 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 13 Mar 2018 07:28:51 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/css</destination>
+			<type>folder</type>
+			<uuidstructure>311adc66-2690-11e8-9c75-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 13 Mar 2018 07:28:57 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 13 Mar 2018 07:28:57 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/css/admision.css</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/css/admision.css</destination>
+			<type>plain</type>
+			<uuidstructure>2d6cb3ec-30e6-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>2d6cb3ed-30e6-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 30 Apr 2018 06:53:53 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 26 Mar 2018 11:09:39 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[admision]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img</destination>
+			<type>folder</type>
+			<uuidstructure>378a5a3a-2690-11e8-9c75-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 13 Mar 2018 07:29:08 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 13 Mar 2018 07:29:08 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Admision_cabecera.jpg</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Admision_cabecera.jpg</destination>
+			<type>image</type>
+			<uuidstructure>08f14372-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>08f14373-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:24 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:24 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Admision_cabecera]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1140,h:257]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/logo_uva_bn.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/logo_uva_bn.png</destination>
+			<type>image</type>
+			<uuidstructure>0a52332a-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>0a52332b-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:26 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:26 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[logo_uva_bn]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:88,h:89]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso01_1.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso01_1.png</destination>
+			<type>image</type>
+			<uuidstructure>09263626-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>09263627-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:24 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:24 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso01_1]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:365,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso01_2Ebau.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso01_2Ebau.png</destination>
+			<type>image</type>
+			<uuidstructure>09550e5a-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>09550e5b-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:24 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:24 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso01_2Ebau]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:730,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso02_1.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso02_1.png</destination>
+			<type>image</type>
+			<uuidstructure>0976790e-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>0976790f-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:25 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:25 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso02_1]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:365,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso02_2preinscripcion.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso02_2preinscripcion.png</destination>
+			<type>image</type>
+			<uuidstructure>099376f2-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>099376f3-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:25 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:25 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso02_2preinscripcion]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:730,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso03_1.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso03_1.png</destination>
+			<type>image</type>
+			<uuidstructure>09aea016-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>09aea017-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:25 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:25 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso03_1]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:365,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso03_2Admision.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso03_2Admision.png</destination>
+			<type>image</type>
+			<uuidstructure>09d53aea-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>09d53aeb-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:25 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:25 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso03_2Admision]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:730,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso04_1.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso04_1.png</destination>
+			<type>image</type>
+			<uuidstructure>09f3e67e-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>09f3e67f-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:25 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:25 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso04_1]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:365,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso04_2matricula.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Paso04_2matricula.png</destination>
+			<type>image</type>
+			<uuidstructure>0a0b8d32-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>0a0b8d33-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:26 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:26 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paso04_2matricula]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:730,h:132]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Secundaria_Azul.jpg</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/Secundaria_Azul.jpg</destination>
+			<type>image</type>
+			<uuidstructure>0a37cd56-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>0a37cd57-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:26 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:26 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Secundaria_Azul]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:273,h:273]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/img/universidaddevalladolid.png</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/img/universidaddevalladolid.png</destination>
+			<type>image</type>
+			<uuidstructure>0a6741ce-493a-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>0a6741cf-493a-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 10:10:26 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Thu, 26 Apr 2018 10:10:26 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[universidaddevalladolid]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:486,h:40]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/js</destination>
+			<type>folder</type>
+			<uuidstructure>344a7178-2690-11e8-9c75-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 13 Mar 2018 07:29:02 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 13 Mar 2018 07:29:02 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/js/sass.js</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/js/sass.js</destination>
+			<type>plain</type>
+			<uuidstructure>140cc980-4a0e-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>140cc981-4a0e-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:28:16 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:28:16 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sass]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss</destination>
+			<type>folder</type>
+			<uuidstructure>3c05a92c-2690-11e8-9c75-0050568213af</uuidstructure>
+			<datelastmodified>Tue, 13 Mar 2018 07:29:15 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Tue, 13 Mar 2018 07:29:15 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_alert.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_alert.scss</destination>
+			<type>plain</type>
+			<uuidstructure>94ea192a-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>94ea192b-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:24:42 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:24:42 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_alert]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_colors.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_colors.scss</destination>
+			<type>plain</type>
+			<uuidstructure>7e61352c-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>7e61352d-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:24:05 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:24:05 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_colors]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_fonts.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_fonts.scss</destination>
+			<type>plain</type>
+			<uuidstructure>78d25355-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>78d25356-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:23:55 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:23:55 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_fonts]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_jumbo.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/_jumbo.scss</destination>
+			<type>plain</type>
+			<uuidstructure>84779680-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>84779681-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:24:15 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:24:15 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[_jumbo]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/admision.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/admision.scss</destination>
+			<type>plain</type>
+			<uuidstructure>6990af8d-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>6990af8e-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:26:37 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:23:30 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[admision]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/media-query.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/media-query.scss</destination>
+			<type>plain</type>
+			<uuidstructure>c86df6f3-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>c86df6f4-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:26:09 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:26:09 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[media-query]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/outline.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/outline.scss</destination>
+			<type>plain</type>
+			<uuidstructure>78dc8c88-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>78dc8c89-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:23:55 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:23:55 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[outline]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/tabs_horizontal.scss</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/resources/admision/scss/tabs_horizontal.scss</destination>
+			<type>plain</type>
+			<uuidstructure>8e03e4b6-4a0d-11e8-b2a2-0050568213af</uuidstructure>
+			<uuidresource>8e03e4b7-4a0d-11e8-b2a2-0050568213af</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:24:31 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Fri, 27 Apr 2018 11:24:31 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[tabs_horizontal]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas</destination>
+			<type>folder</type>
+			<uuidstructure>8d48f657-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-flexible.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-flexible.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>146c0967-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>146c0968-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:30:29 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:29 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Flexible]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-imagen.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-imagen.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>05b7634b-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>05b7634c-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:30:36 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:04 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Imagen]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-jumbo.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-jumbo.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>30b21b4e-326e-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>30b21b4f-326e-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 11:28:16 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Wed, 28 Mar 2018 09:55:47 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Jumbo]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-parrafo.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-parrafo.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>e52ad389-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>e52ad38a-2058-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:30:46 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Parrafo]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-tabs.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-tabs.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>913689e8-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>913689e9-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 07:56:03 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:53:20 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-teaser.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-teaser.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>49ca726f-2065-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>49ca7270-2065-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:30:54 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:06:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Teaser]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-title.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-title.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>596bda92-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>596bda93-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Thu, 12 Apr 2018 11:24:41 GMT</datelastmodified>
+			<userlastmodified>e71124293j</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:51:46 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Titulo]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/pr-video.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/pr-video.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>205189f3-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>205189f4-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:31:03 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:49 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Video]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/nested</destination>
+			<type>folder</type>
+			<uuidstructure>600a5cdd-2059-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:41:27 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:41:27 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-image.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-image.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>98fe97f1-2059-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>98fe97f2-2059-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:31:21 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:43:02 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Elemento Imagen]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-imagenitem.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-imagenitem.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>a0ba1dc3-2059-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>a0ba1dc4-2059-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:31:32 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:43:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Elemento Item Imagen]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-link.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-link.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>a4e43f75-2059-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>a4e43f76-2059-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:31:39 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:43:22 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Elemento Link]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-paragraph.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-paragraph.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>795260cf-2059-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>795260d0-2059-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:31:46 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:42:09 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Elemento Parrafo]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-teaseritem.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-teaseritem.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7e402a63-2065-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>7e402a64-2065-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:31:52 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:08:11 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Elemento Teaser]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-video.xsd</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/schemas/nested/pr-video.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>a908bbd7-2059-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>a908bbd8-2059-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Tue, 13 Mar 2018 07:31:58 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:43:29 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Peregrine Tipo Elemento Video]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/templates</destination>
+			<type>folder</type>
+			<uuidstructure>8d4329f1-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 09:35:33 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:35:33 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/es.uva.web.portal.peregrine/templates/admision</destination>
+			<type>folder</type>
+			<uuidstructure>bd280661-2066-11e8-b845-0242ac11002b</uuidstructure>
+			<datelastmodified>Mon, 05 Mar 2018 11:17:06 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:17:06 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/templates/admision/frontpage.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/templates/admision/frontpage.jsp</destination>
+			<type>containerpage_template</type>
+			<uuidstructure>cab8c5d3-2066-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>cab8c5d4-2066-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Fri, 27 Apr 2018 11:29:29 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:17:29 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/es.uva.web.portal.peregrine/templates/admision/main.jsp</source>
+			<destination>system/modules/es.uva.web.portal.peregrine/templates/admision/main.jsp</destination>
+			<type>containerpage_template</type>
+			<uuidstructure>d01b6785-2066-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>d01b6786-2066-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Thu, 26 Apr 2018 11:25:16 GMT</datelastmodified>
+			<userlastmodified>e09338789f</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:17:38 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<uuidstructure>20e1275f-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:56:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+				<property>
+					<name>login-form</name>
+					<value><![CDATA[/system/login/index.html]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ALL_OTHERS</uuidprincipal>
+					<flags>134</flags>
+					<permissionset>
+						<allowed>0</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>518</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<uuidstructure>20e8c881-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Mon, 20 Feb 2017 10:55:44 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<uuidstructure>20efa653-f75b-11e6-abfe-0050568213af</uuidstructure>
+			<datelastmodified>Thu, 12 Apr 2018 08:06:10 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 20 Feb 2017 10:55:44 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-flexible.png</source>
+			<destination>system/workplace/resources/filetypes/pr-flexible.png</destination>
+			<type>image</type>
+			<uuidstructure>1477c93a-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>1477c93b-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:29 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-flexible_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-flexible_big.png</destination>
+			<type>image</type>
+			<uuidstructure>1479c50e-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>1479c50f-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:29 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-imagen.png</source>
+			<destination>system/workplace/resources/filetypes/pr-imagen.png</destination>
+			<type>image</type>
+			<uuidstructure>05bdcbee-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>05bdcbef-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:05 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-imagen_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-imagen_big.png</destination>
+			<type>image</type>
+			<uuidstructure>05bfeed2-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>05bfeed3-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:05 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-jumbo.png</source>
+			<destination>system/workplace/resources/filetypes/pr-jumbo.png</destination>
+			<type>image</type>
+			<uuidstructure>30d11401-326e-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>30d11402-326e-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 28 Mar 2018 09:55:48 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-jumbo_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-jumbo_big.png</destination>
+			<type>image</type>
+			<uuidstructure>30e51135-326e-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>30e51136-326e-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 28 Mar 2018 09:55:48 GMT</datecreated>
+			<usercreated>e09338789f</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-parrafo.png</source>
+			<destination>system/workplace/resources/filetypes/pr-parrafo.png</destination>
+			<type>image</type>
+			<uuidstructure>e544eb3c-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>e544eb3d-2058-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:01 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-parrafo_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-parrafo_big.png</destination>
+			<type>image</type>
+			<uuidstructure>e547d170-2058-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>e547d171-2058-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:38:01 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-tabs.png</source>
+			<destination>system/workplace/resources/filetypes/pr-tabs.png</destination>
+			<type>image</type>
+			<uuidstructure>91483d2b-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>91483d2c-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:53:20 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-tabs_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-tabs_big.png</destination>
+			<type>image</type>
+			<uuidstructure>9151da1f-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>9151da20-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:53:20 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-teaser.png</source>
+			<destination>system/workplace/resources/filetypes/pr-teaser.png</destination>
+			<type>image</type>
+			<uuidstructure>49d17752-2065-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>49d17753-2065-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:06:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-teaser_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-teaser_big.png</destination>
+			<type>image</type>
+			<uuidstructure>49d40f66-2065-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>49d40f67-2065-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 11:06:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-title.png</source>
+			<destination>system/workplace/resources/filetypes/pr-title.png</destination>
+			<type>image</type>
+			<uuidstructure>5984e0d5-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>5984e0d6-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:51:46 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-title_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-title_big.png</destination>
+			<type>image</type>
+			<uuidstructure>59929c79-3e26-11e8-a3c6-0050568213af</uuidstructure>
+			<uuidresource>59929c7a-3e26-11e8-a3c6-0050568213af</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 10:59:24 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 12 Apr 2018 07:51:46 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-video.png</source>
+			<destination>system/workplace/resources/filetypes/pr-video.png</destination>
+			<type>image</type>
+			<uuidstructure>205bc326-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>205bc327-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:49 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/pr-video_big.png</source>
+			<destination>system/workplace/resources/filetypes/pr-video_big.png</destination>
+			<type>image</type>
+			<uuidstructure>205ed06a-205a-11e8-b845-0242ac11002b</uuidstructure>
+			<uuidresource>205ed06b-205a-11e8-b845-0242ac11002b</uuidresource>
+			<datelastmodified>Mon, 20 Feb 2017 12:22:01 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 05 Mar 2018 09:46:49 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[sample-icon_big]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

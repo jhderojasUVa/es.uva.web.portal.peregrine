@@ -1,0 +1,852 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Alegreya:300, 400, 500|Arvo:300, 400, 500|IM+Fell+English+SC:300, 400, 500|Lato:300, 400, 500|Libre+Franklin:300, 400, 500|Montserrat:300, 400, 500|Open+Sans:300, 400, 500|Raleway:300, 400, 500");
+/* line 5, /httdocs/components/fonts/_fonts.scss */
+h1, h2, h3 {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* line 9, /httdocs/components/fonts/_fonts.scss */
+h4, h5, h5 .opensans, p .pie_foto, li .pie_foto {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 13, /httdocs/components/fonts/_fonts.scss */
+h5 .arvo {
+  font-family: "Arvo", serif;
+}
+
+/* line 17, /httdocs/components/fonts/_fonts.scss */
+p, li {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 21, /httdocs/components/fonts/_fonts.scss */
+h1 .titulos_cortos {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 25, /httdocs/components/fonts/_fonts.scss */
+blockquote {
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 29, /httdocs/components/fonts/_fonts.scss */
+.script {
+  font-family: "IM Fell English", serif;
+}
+
+/* line 35, /httdocs/components/fonts/_fonts.scss */
+h1 {
+  color: rgba(55, 55, 55, 0.9);
+  font-weight: 300;
+  font-size: 2.8em;
+  line-height: 1.0em;
+  margin-bottom: .1em;
+  margin-top: .1em;
+}
+
+/* line 43, /httdocs/components/fonts/_fonts.scss */
+h1 .titulos_cortos {
+  font-weight: 400;
+}
+
+/* line 49, /httdocs/components/fonts/_fonts.scss */
+h2 {
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-top: .2em;
+  margin-bottom: .0em;
+}
+
+/* line 59, /httdocs/components/fonts/_fonts.scss */
+h3 {
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* line 69, /httdocs/components/fonts/_fonts.scss */
+h4 {
+  color: rgba(55, 55, 55, 0.8);
+  font-weight: 400;
+  font-size: .8em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* line 79, /httdocs/components/fonts/_fonts.scss */
+h5 {
+  font-weight: 400;
+  color: rgba(55, 55, 55, 0.8);
+  font-size: .65em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* line 95, /httdocs/components/fonts/_fonts.scss */
+p, li {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: rgba(55, 55, 55, 0.8);
+}
+
+/* line 103, /httdocs/components/fonts/_fonts.scss */
+p .pie_foto, li .pie_foto {
+  font-size: .65em;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.4em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* line 114, /httdocs/components/fonts/_fonts.scss */
+blockquote {
+  font-size: 2em;
+  line-height: 1.0;
+  color: rgba(227, 5, 74, 0.75);
+}
+
+@media screen and (max-width: 480px) {
+  /* line 126, /httdocs/components/fonts/_fonts.scss */
+  h1 {
+    color: rgba(55, 55, 55, 0.9);
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.0em;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+  }
+  /* line 135, /httdocs/components/fonts/_fonts.scss */
+  h2 {
+    color: rgba(55, 55, 55, 0.8);
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  /* line 144, /httdocs/components/fonts/_fonts.scss */
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: .9em;
+    margin-bottom: .5em;
+  }
+  /* line 150, /httdocs/components/fonts/_fonts.scss */
+  h4 {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  /* line 156, /httdocs/components/fonts/_fonts.scss */
+  h5 {
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  /* line 162, /httdocs/components/fonts/_fonts.scss */
+  h6 {
+    font-size: .65em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  /* line 168, /httdocs/components/fonts/_fonts.scss */
+  p, li {
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-top: .6em;
+    margin-bottom: 1.5em;
+  }
+  /* line 176, /httdocs/components/fonts/_fonts.scss */
+  .footer p {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: rgba(55, 55, 55, 0.8);
+  }
+  /* line 185, /httdocs/components/fonts/_fonts.scss */
+  blockquote {
+    font-size: 2em;
+    line-height: 1.0;
+  }
+}
+
+/* line 191, /httdocs/components/fonts/_fonts.scss */
+h2 p {
+  font-size: 1.4em;
+  line-height: 1.25em;
+}
+
+/* line 195, /httdocs/components/fonts/_fonts.scss */
+h2 p {
+  margin: 0;
+}
+
+/*
+  Definición de colores segun su A
+
+  v0.1
+*/
+/* ==== Negro ==== */
+/* ==== Azul ==== */
+/* ==== Blanco ==== */
+/* === Generico === */
+/* line 10, /httdocs/components/jumbo/_jumbo.scss */
+.jumbo {
+  border-radius: 4px;
+  height: 212px;
+}
+
+/* line 13, /httdocs/components/jumbo/_jumbo.scss */
+.jumbo h1 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 0.8em;
+}
+
+/* line 18, /httdocs/components/jumbo/_jumbo.scss */
+.jumbo p {
+  color: #323433;
+  font-size: 0.8em;
+}
+
+/* line 22, /httdocs/components/jumbo/_jumbo.scss */
+.jumbo button {
+  background: white;
+  color: #43ac9d;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  float: right;
+  padding: 0 2em;
+  margin-top: 0.5em;
+}
+
+/* line 32, /httdocs/components/jumbo/_jumbo.scss */
+.jumbo button a {
+  color: #43ac9d;
+}
+
+/* line 34, /httdocs/components/jumbo/_jumbo.scss */
+.jumbo button a:hover {
+  text-decoration: none;
+}
+
+/* line 121, /httdocs/components/tabs/tabs_horizontal.scss */
+.hide_element {
+  display: none !important;
+}
+
+/* line 124, /httdocs/components/tabs/tabs_horizontal.scss */
+.show_element {
+  display: inline !important;
+}
+
+/* line 7, /httdocs/components/alert/_alert.scss */
+.alert {
+  border-radius: 0px;
+  border: 1px solid #e5241f;
+}
+
+/* line 10, /httdocs/components/alert/_alert.scss */
+.alert .retoque_margins {
+  margin-top: -12px;
+  margin-bottom: -12px;
+  margin-left: -20px;
+  margin-right: -21px;
+}
+
+/* line 16, /httdocs/components/alert/_alert.scss */
+.alert .barra {
+  background-color: white;
+  background-image: linear-gradient(135deg, transparent, transparent 25%, #e5241f 25%, #e5241f 50%, transparent 50%, transparent 75%, #e5241f 75%, #e5241f);
+  background-size: 20px 20px;
+}
+
+/* line 25, /httdocs/components/alert/_alert.scss */
+.alert .btn {
+  text-transform: uppercase;
+}
+
+/* line 28, /httdocs/components/alert/_alert.scss */
+.alert p {
+  font-weight: bold;
+}
+
+/* line 3, /httdocs/components/tabs/tab_patch_bootstrap.scss */
+.tabs {
+  margin-top: 1em;
+}
+
+/* line 5, /httdocs/components/tabs/tab_patch_bootstrap.scss */
+.tabs .nav {
+  border: none;
+}
+
+/* line 7, /httdocs/components/tabs/tab_patch_bootstrap.scss */
+.tabs .nav .nav-tabs {
+  /*.nav-link {
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: lighten($color_perfil, 30);
+        &.active {
+          border: 1px solid $color_perfil;
+          color: lighten($color_perfil, 10);
+        }
+      }*/
+}
+
+/* line 8, /httdocs/components/tabs/tab_patch_bootstrap.scss */
+.tabs .nav .nav-tabs ul li {
+  padding: 0.8em 1.3em;
+  margin: 0;
+  display: inline-block;
+  list-style-type: none;
+  border-left: 1px solid #d0d0d0;
+  border-top: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #797979;
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 34, /httdocs/components/tabs/tab_patch_bootstrap.scss */
+.tabs .nav-tabs .nav-link {
+  margin-right: 0.2em;
+  border: 1px solid #dedede;
+  color: #5f5f5f;
+}
+
+/* line 39, /httdocs/components/tabs/tab_patch_bootstrap.scss */
+.tabs .nav-tabs .nav-link.active {
+  border: 1px solid #ababab;
+  color: #2c2c2c;
+}
+
+/* line 45, /httdocs/components/tabs/tab_patch_bootstrap.scss */
+.tabs .tab-content {
+  color: #121212;
+  border: 1px solid #d0d0d0;
+  border-radius: 0 0 4px 4px;
+  padding: 0.5em;
+}
+
+/* line 25, /httdocs/admision_2/scss/admision.scss */
+body {
+  background-image: linear-gradient(-45deg, #f1f1f1 1px, #f8f8f8 2px, #f8f8f8 10px);
+  background-size: 10px 10px;
+}
+
+/* Estilos de la cabecera */
+/* line 31, /httdocs/admision_2/scss/admision.scss */
+.cabecera {
+  background: url("../img/Admision_cabecera.jpg") no-repeat;
+  background-size: contain;
+}
+
+/* Estilos del menu */
+/* line 37, /httdocs/admision_2/scss/admision.scss */
+.navegacion {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: 1px solid #999999;
+  padding: 1em;
+  z-index: 100;
+}
+
+/* line 44, /httdocs/admision_2/scss/admision.scss */
+.navegacion a {
+  color: black;
+}
+
+/* line 47, /httdocs/admision_2/scss/admision.scss */
+.navegacion .nav {
+  display: inline;
+}
+
+/* line 49, /httdocs/admision_2/scss/admision.scss */
+.navegacion .nav li a {
+  color: #999999;
+}
+
+/* line 55, /httdocs/admision_2/scss/admision.scss */
+.titulo {
+  font-size: 6.8em;
+}
+
+/* line 57, /httdocs/admision_2/scss/admision.scss */
+.titulo.notanto {
+  font-size: 6.8em;
+}
+
+/* Titulo adaptative */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  /* line 64, /httdocs/admision_2/scss/admision.scss */
+  .titulo {
+    font-size: 5.7em;
+  }
+  /* line 66, /httdocs/admision_2/scss/admision.scss */
+  .titulo.notanto {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  /* line 72, /httdocs/admision_2/scss/admision.scss */
+  .titulo {
+    font-size: 4em;
+  }
+  /* line 74, /httdocs/admision_2/scss/admision.scss */
+  .titulo.notanto {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 80, /httdocs/admision_2/scss/admision.scss */
+  .titulo {
+    font-size: 10em;
+  }
+  /* line 82, /httdocs/admision_2/scss/admision.scss */
+  .titulo.notanto {
+    font-size: 3em;
+  }
+}
+
+/* line 88, /httdocs/admision_2/scss/admision.scss */
+.titulo_gordo {
+  position: relative;
+}
+
+/* line 90, /httdocs/admision_2/scss/admision.scss */
+.titulo_gordo .numero_paso {
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  font-size: 2em;
+}
+
+/* line 98, /httdocs/admision_2/scss/admision.scss */
+.footer {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/*
+@include outline('verde', $verde);
+@include outline('azul', $azul);
+@include outline('morado', $morado);
+@include outline('naranja2', $naranja);
+@include outline('negro', $negro);
+*/
+/* line 268, /httdocs/components/fonts/_fonts.scss */
+.border_total_verde_1 {
+  border: 1px solid #25ad87;
+}
+
+/* line 271, /httdocs/components/fonts/_fonts.scss */
+.border_top_verde_1 {
+  border-top: 1px solid #25ad87;
+}
+
+/* line 274, /httdocs/components/fonts/_fonts.scss */
+.border_bottom_verde_1 {
+  border-bottom: 1px solid #25ad87;
+}
+
+/* line 268, /httdocs/components/fonts/_fonts.scss */
+.border_total_azul_1 {
+  border: 1px solid #4da7e3;
+}
+
+/* line 271, /httdocs/components/fonts/_fonts.scss */
+.border_top_azul_1 {
+  border-top: 1px solid #4da7e3;
+}
+
+/* line 274, /httdocs/components/fonts/_fonts.scss */
+.border_bottom_azul_1 {
+  border-bottom: 1px solid #4da7e3;
+}
+
+/* line 268, /httdocs/components/fonts/_fonts.scss */
+.border_total_azul_oscuro_1 {
+  border: 1px solid #005d8c;
+}
+
+/* line 271, /httdocs/components/fonts/_fonts.scss */
+.border_top_azul_oscuro_1 {
+  border-top: 1px solid #005d8c;
+}
+
+/* line 274, /httdocs/components/fonts/_fonts.scss */
+.border_bottom_azul_oscuro_1 {
+  border-bottom: 1px solid #005d8c;
+}
+
+/* line 268, /httdocs/components/fonts/_fonts.scss */
+.border_total_morado_1 {
+  border: 1px solid #c0b2d5;
+}
+
+/* line 271, /httdocs/components/fonts/_fonts.scss */
+.border_top_morado_1 {
+  border-top: 1px solid #c0b2d5;
+}
+
+/* line 274, /httdocs/components/fonts/_fonts.scss */
+.border_bottom_morado_1 {
+  border-bottom: 1px solid #c0b2d5;
+}
+
+/* line 268, /httdocs/components/fonts/_fonts.scss */
+.border_total_naranja2_1 {
+  border: 1px solid #eb684c;
+}
+
+/* line 271, /httdocs/components/fonts/_fonts.scss */
+.border_top_naranja2_1 {
+  border-top: 1px solid #eb684c;
+}
+
+/* line 274, /httdocs/components/fonts/_fonts.scss */
+.border_bottom_naranja2_1 {
+  border-bottom: 1px solid #eb684c;
+}
+
+/* line 236, /httdocs/components/fonts/_fonts.scss */
+.margin_bottom_0 {
+  margin-bottom: 0;
+}
+
+/* line 239, /httdocs/components/fonts/_fonts.scss */
+.margin_top_0 {
+  margin-top: 0;
+}
+
+/* line 242, /httdocs/components/fonts/_fonts.scss */
+.margin_left_0 {
+  margin-left: 0;
+}
+
+/* line 245, /httdocs/components/fonts/_fonts.scss */
+.margin_right_0 {
+  margin-right: 0;
+}
+
+/* line 52, /httdocs/components/colors/_colors.scss */
+.naranja {
+  color: #ff8a66;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_10 {
+  color: #ffb199;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_20 {
+  color: #ffd8cc;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_30 {
+  color: white;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_40 {
+  color: white;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_50 {
+  color: white;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_60 {
+  color: white;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_70 {
+  color: white;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_80 {
+  color: white;
+}
+
+/* line 59, /httdocs/components/colors/_colors.scss */
+.naranja_90 {
+  color: white;
+}
+
+/* line 222, /httdocs/components/fonts/_fonts.scss */
+.text-color_amarillo {
+  color: #f0c84e;
+}
+
+/* line 222, /httdocs/components/fonts/_fonts.scss */
+.text-color_blanco {
+  color: white;
+}
+
+/* line 222, /httdocs/components/fonts/_fonts.scss */
+.text-color_negro {
+  color: black;
+}
+
+/* line 281, /httdocs/components/fonts/_fonts.scss */
+.sombra_box_3 {
+  box-shadow: 0px 3px 3px black;
+  padding: 3px;
+}
+
+/* line 229, /httdocs/components/fonts/_fonts.scss */
+.fondo_verde {
+  background-color: #25ad87;
+}
+
+/* line 229, /httdocs/components/fonts/_fonts.scss */
+.fondo_naranja {
+  background-color: #ff8a66;
+}
+
+/* line 229, /httdocs/components/fonts/_fonts.scss */
+.fondo_blanco {
+  background-color: white;
+}
+
+/* line 229, /httdocs/components/fonts/_fonts.scss */
+.fondo_amarillo {
+  background-color: #f0c84e;
+}
+
+/* line 229, /httdocs/components/fonts/_fonts.scss */
+.fondo_morado {
+  background-color: #c0b2d5;
+}
+
+/* line 229, /httdocs/components/fonts/_fonts.scss */
+.fondo_azul {
+  background-color: #4da7e3;
+}
+
+/* line 54, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_si {
+  background-color: #4da7e3;
+  height: 212px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+/* line 25, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_si h1 {
+  text-align: center;
+  color: white;
+  padding: 1.5em 0;
+  font-size: 1.6em;
+}
+
+/* line 31, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_si button {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: white;
+  border: none;
+  padding: 0.5em 1.5em;
+  color: #155682;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* line 40, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_si button a:hover {
+  text-decoration: none;
+}
+
+/* line 59, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_no {
+  background-color: #4da7e3;
+  height: 212px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+/* line 25, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_no h1 {
+  text-align: center;
+  color: white;
+  padding: 1.5em 0;
+  font-size: 1.6em;
+}
+
+/* line 31, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_no button {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: white;
+  border: none;
+  padding: 0.5em 1.5em;
+  color: #155682;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* line 40, /httdocs/components/jumbotron/_jumbotron.scss */
+.jumbotron_blanco_azul_no button a:hover {
+  text-decoration: none;
+}
+
+/* line 10, /httdocs/components/tabs/tabs_horizontal.scss */
+.tab_horizontal_left {
+  margin-top: 1em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 800px), only screen and (max-width: 480px) {
+  /* line 16, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul {
+    height: 50px;
+    background-color: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  /* line 24, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul a {
+    color: #d0d0d0;
+  }
+  /* line 26, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul a li.active {
+    color: #a0a0a0;
+  }
+  /* line 28, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul a li.active:hover {
+    text-decoration: none;
+  }
+  /* line 33, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul li {
+    padding: 0.8em 1.3em;
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+    border-left: 1px solid #d0d0d0;
+    border-top: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #797979;
+    border-radius: 4px 4px 0 0;
+  }
+  /* line 45, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul li.active {
+    border-left: 1px solid #a0a0a0;
+    border-top: 1px solid #a0a0a0;
+    border-right: 1px solid #a0a0a0;
+    color: #a0a0a0;
+  }
+  /* line 50, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul li.active a {
+    color: #a0a0a0;
+  }
+  /* line 56, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left .contenido {
+    border: 1px solid #d0d0d0;
+    padding: 0.5em;
+  }
+  /* line 59, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left .contenido > div {
+    display: none;
+  }
+  /* line 61, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left .contenido > div.active {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  /* line 69, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul {
+    background-color: white;
+    position: relative;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  /* line 78, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul a {
+    color: #d0d0d0;
+  }
+  /* line 80, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul a li.active {
+    color: #a0a0a0;
+  }
+  /* line 82, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul a li.active:hover {
+    text-decoration: none;
+  }
+  /* line 87, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul li {
+    padding: 0.8em 1.3em;
+    margin: 0;
+    list-style-type: none;
+    border: 1px solid #d0d0d0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #797979;
+    border-radius: 0px;
+  }
+  /* line 98, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul li.active {
+    border: 1px solid #a0a0a0;
+    color: #a0a0a0;
+  }
+  /* line 101, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul li.active a {
+    color: #a0a0a0;
+  }
+  /* line 106, /httdocs/components/tabs/tabs_horizontal.scss */
+  .tab_horizontal_left ul li div {
+    display: none;
+    text-align: left;
+    background-color: white;
+    text-transform: none;
+  }
+}
+
+/*# sourceMappingURL=../css/admision.map */

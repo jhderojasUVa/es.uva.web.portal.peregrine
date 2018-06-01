@@ -1,0 +1,16 @@
+parrafo.default.Title=Título del párrafo (cambiar)
+parrafo.default.Texto=Título del párrafo (cambiar)
+parrafo.default.Text=Texto del párrafo (cambiar)
+label.PRParrafo.Title=Título del párrafo que luego se puede ocultar
+label.PRParrafo.Title.help=Título del párrafo
+label.PRParrafo.Paragraph=Párrafos de texto
+label.PRParrafo.Paragraph.help=Párrafos de texto
+label.PRParagraph.Headline=Título del elemento de párrafo (opcional)
+label.PRParagraph.Headline.help=el título que aparecerá en el párrrafo
+label.PRParagraph.Text=Texto del párrafo
+label.PRParagraph.Text.help=Texto del párrafo
+label.PRParagraph.Image=Imagen asociada al párrafo
+label.PRParagraph.Image.help=Imagen asociada al párrafo
+label.PRParagraph.Link=Enlace adicional al párrafo
+label.PRParagraph.Link.help=Enlace adicional al párrafo
+setting.hidetitle=Ocultar título

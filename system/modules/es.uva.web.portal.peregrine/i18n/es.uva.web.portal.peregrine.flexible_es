@@ -1,0 +1,10 @@
+flexible.default.Title=Título del elemento flexible
+label.PRFlexible.Title=Título del elemento flexible
+label.PRFlexible.Title.help=Título del flexible que se puede ocultar
+label.PRFlexible.Code=Código HTML del elemento flexible
+label.PRFlexible.Code.help=Código HTML del elemento flexible
+label.PRFlexible.RequireReload=Requiere recargar
+label.PRFlexible.RequireReload.help=Requiere recargar
+label.PRFlexible.GalleryTitle=Galeria
+label.PRFlexible.GalleryTitle.help=Galeria
+setting.hidetitle=Ocultar título
